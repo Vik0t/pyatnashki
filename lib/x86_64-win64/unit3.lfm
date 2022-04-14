@@ -1,0 +1,94 @@
+object FTimer: TFTimer
+  Left = 258
+  Height = 239
+  Top = 180
+  Width = 307
+  Caption = 'FTimer'
+  ClientHeight = 239
+  ClientWidth = 307
+  Color = clBackground
+  DesignTimePPI = 120
+  LCLVersion = '2.2.0.4'
+  object SpinH: TSpinEdit
+    Left = 16
+    Height = 60
+    Top = 24
+    Width = 80
+    AutoSize = False
+    Color = clBackground
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clWhite
+    Font.Height = -43
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    MaxValue = 24
+    OnChange = SpinHChange
+    ParentFont = False
+    TabOrder = 0
+  end
+  object SpinM: TSpinEdit
+    Left = 112
+    Height = 60
+    Top = 24
+    Width = 80
+    AutoSize = False
+    Color = clBackground
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clWhite
+    Font.Height = -43
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    MaxValue = 59
+    ParentFont = False
+    TabOrder = 1
+  end
+  object SpinS: TSpinEdit
+    Left = 208
+    Height = 60
+    Top = 24
+    Width = 80
+    AutoSize = False
+    Color = clBackground
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clWhite
+    Font.Height = -43
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    MaxValue = 59
+    ParentFont = False
+    TabOrder = 2
+  end
+  object btstart: TButton
+    Left = 16
+    Height = 47
+    Top = 112
+    Width = 272
+    Caption = 'старт'
+    Color = clCaptionText
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -37
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = btstartClick
+    ParentFont = False
+    TabOrder = 3
+  end
+  object btreset: TButton
+    Left = 16
+    Height = 48
+    Top = 168
+    Width = 272
+    Caption = 'сброс'
+    OnClick = btresetClick
+    TabOrder = 4
+  end
+  object tmtimer: TTimer
+    OnTimer = tmtimerTimer
+    Left = 273
+    Top = 205
+  end
+end
