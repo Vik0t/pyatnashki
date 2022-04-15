@@ -17,6 +17,7 @@ uses
 
 begin
   RequireDerivedFormResource:=True;
+  Application.Title:='пятнашки вити';
   Application.Scaled:=True;
   Application.Initialize;
   Application.CreateForm(Tfrgame, frgame);

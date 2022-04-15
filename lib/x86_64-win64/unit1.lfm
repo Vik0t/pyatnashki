@@ -569,6 +569,10 @@ object frgame: Tfrgame
         Caption = 'новая игра'
         OnClick = mItem2Click
       end
+      object mHelp: TMenuItem
+        Caption = 'помощь'
+        OnClick = mHelpClick
+      end
     end
     object MenuItem1: TMenuItem
       Caption = 'настройки'
